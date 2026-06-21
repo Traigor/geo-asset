@@ -137,3 +137,8 @@ Browser E2E tests are intentionally skipped. For this assignment, backend integr
 * **Leaflet / React Leaflet for the map.** Leaflet was chosen because it is lightweight, open-source, quick to set up locally, and sufficient for marker rendering, map-bound search, popups, and map-based location picking.
 
 * **Focused tests over exhaustive coverage.** Backend tests cover domain rules, application behavior, schemas, repository/API integration, and seed behavior. Frontend tests focus on API serialization, hook behavior, and key components. Browser E2E tests were intentionally skipped to avoid spending disproportionate time automating map interactions for a small take-home.
+
+## Screenshot 
+![alt text](area-assets.png)
+
+![alt text](all-assets.png)
