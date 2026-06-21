@@ -20,7 +20,6 @@ Local full-stack app for tracking physical assets on a map.
 ```bash
 npm install
 npm run db:up
-npm run db:migrate
 npm run dev
 ```
 
@@ -29,6 +28,11 @@ Backend: `http://localhost:4000`
 Frontend: `http://localhost:5173`
 
 The Docker Compose PostGIS databases use host ports `55432` and `55433` to avoid clashing with a local PostgreSQL on `5432`.
+
+## Screenshots
+![alt text](area-assets.png)
+
+![alt text](all-assets.png)
 
 ## Environment
 
@@ -138,7 +142,3 @@ Browser E2E tests are intentionally skipped. For this assignment, backend integr
 
 * **Focused tests over exhaustive coverage.** Backend tests cover domain rules, application behavior, schemas, repository/API integration, and seed behavior. Frontend tests focus on API serialization, hook behavior, and key components. Browser E2E tests were intentionally skipped to avoid spending disproportionate time automating map interactions for a small take-home.
 
-## Screenshots
-![alt text](area-assets.png)
-
-![alt text](all-assets.png)
