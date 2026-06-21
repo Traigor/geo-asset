@@ -138,7 +138,7 @@ Browser E2E tests are intentionally skipped. For this assignment, backend integr
 
 * **Focused tests over exhaustive coverage.** Backend tests cover domain rules, application behavior, schemas, repository/API integration, and seed behavior. Frontend tests focus on API serialization, hook behavior, and key components. Browser E2E tests were intentionally skipped to avoid spending disproportionate time automating map interactions for a small take-home.
 
-## Screenshot 
+## Screenshots
 ![alt text](area-assets.png)
 
 ![alt text](all-assets.png)
