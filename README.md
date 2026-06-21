@@ -21,7 +21,6 @@ Local full-stack app for tracking physical assets on a map.
 npm install
 npm run db:up
 npm run db:migrate
-npm run db:seed
 npm run dev
 ```
 
