@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    ports:
+      - "55432:5432"
+    environment:
+      POSTGRES_USER: geo_asset
+      POSTGRES_PASSWORD: geo_asset
+      POSTGRES_DB: geo_asset
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  postgres-test:
+    image: postgis/postgis:16-3.4
+    ports:
+      - "55433:5432"
+    environment:
+      POSTGRES_USER: geo_asset
+      POSTGRES_PASSWORD: geo_asset
+      POSTGRES_DB: geo_asset_test
+
+volumes:
+  postgres_data:
