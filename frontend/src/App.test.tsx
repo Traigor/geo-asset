@@ -55,6 +55,8 @@ function createAssetState(overrides: Partial<UseAssetsResult> = {}): UseAssetsRe
     isPickingLocation: false,
     isLoading: false,
     error: null,
+    mutationError: null,
+    isMutating: false,
     setFilters: () => undefined,
     setPage: () => undefined,
     selectAsset: () => undefined,

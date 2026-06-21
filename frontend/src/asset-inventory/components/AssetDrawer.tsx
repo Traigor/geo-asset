@@ -42,15 +42,15 @@ export function AssetDrawer({
 
   return (
     <Drawer title={title} isOpen={isOpen} onClose={onClose}>
-      {mutationError === null ? null : (
-        <div className="mb-3 rounded-md border border-red-200 bg-red-50 px-2.5 py-2 text-red-900">
-          {mutationError.split('\n').map((line) => (
-            <p key={line} className="m-0">
-              {line}
-            </p>
-          ))}
-        </div>
-      )}
+    {mutationError ? (
+      <div className="mb-3 rounded-md border border-red-200 bg-red-50 px-2.5 py-2 text-red-900">
+        {mutationError.split('\n').map((line) => (
+          <p key={line} className="m-0">
+            {line}
+          </p>
+        ))}
+      </div>
+    ) : null}
       {mode === 'details' && asset !== null ? (
         <AssetDetails asset={asset} isMutating={isMutating} onEdit={onEdit} onDelete={onDelete} />
       ) : null}

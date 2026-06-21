@@ -12,6 +12,7 @@ describe('AssetForm', () => {
       <AssetForm
         mode="create"
         initialAsset={null}
+        isSubmitting={false}
         pickedLocation={{ lat: 42.36, lng: -71.06 }}
         onSubmit={onSubmit}
         onCancel={vi.fn()}
@@ -34,6 +35,7 @@ describe('AssetForm', () => {
       <AssetForm
         mode="create"
         initialAsset={null}
+        isSubmitting={false}
         pickedLocation={{ lat: 42.36, lng: -71.06 }}
         onSubmit={onSubmit}
         onCancel={vi.fn()}
@@ -68,6 +70,7 @@ describe('AssetForm', () => {
       <AssetForm
         mode="create"
         initialAsset={null}
+        isSubmitting={false}
         pickedLocation={{ lat: 42.36, lng: -71.06 }}
         onSubmit={onSubmit}
         onCancel={vi.fn()}
@@ -92,6 +95,7 @@ describe('AssetForm', () => {
       <AssetForm
         mode="create"
         initialAsset={null}
+        isSubmitting={false}
         pickedLocation={null}
         onSubmit={vi.fn()}
         onCancel={vi.fn()}
@@ -113,6 +117,7 @@ describe('AssetForm', () => {
       <AssetForm
         mode="create"
         initialAsset={null}
+        isSubmitting={false}
         pickedLocation={null}
         onSubmit={vi.fn()}
         onCancel={vi.fn()}
